@@ -850,7 +850,7 @@ agregado desde aqui
       <div class="marco-video">
         <div class="ratio ratio-16x9">
           <video id="videoAmor"
-                 src="video1.mp4"
+                 src="video2.mp4"
                  controls
                  playsinline
                  preload="metadata">
@@ -995,7 +995,17 @@ agregado desde aqui
           }
         });
       });
-  </script>
+     // AGREGADO: pausar la canción cuando se reproduce el video
+    const videoAmor = document.getElementById("videoAmor");
 
+    if (videoAmor) {
+      videoAmor.addEventListener("play", () => {
+        if (!audio.paused) {
+          audio.pause();
+          actualizarMusica();
+        }
+      });
+    }
+  </script>
 </body>
 </html>
