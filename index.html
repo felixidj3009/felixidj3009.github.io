@@ -232,6 +232,118 @@
         transition-duration: .01ms !important;
       }
     }
+agregado desde aqui 
+      .fondo-aniversario {
+      background: linear-gradient(160deg, #fde4ec, #fff8fa 55%, #f9d5e2);
+    }
+
+    .sobre-boton {
+      background: none;
+      border: 0;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+      padding: 0;
+      transition: transform .3s;
+    }
+
+    .sobre-boton:hover { transform: scale(1.06) rotate(-2deg); }
+
+    .sobre-emoji {
+      font-size: 6rem;
+      display: block;
+      animation: latido 1.8s infinite;
+    }
+
+    .carta-aniversario {
+      background:
+        repeating-linear-gradient(transparent 0, transparent 37px, rgba(181, 46, 89, .08) 38px),
+        #fffaf7;
+      border: 1px solid #f1cfdb;
+      border-radius: 22px;
+      box-shadow: 0 18px 45px rgba(116, 27, 59, .14);
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 2.2rem 1.6rem;
+      line-height: 2;
+      font-size: 1.08rem;
+      position: relative;
+    }
+
+    .carta-aniversario::before {
+      content: "💌";
+      position: absolute;
+      top: -22px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2.4rem;
+      background: var(--rosa-claro);
+      border-radius: 50%;
+      padding: 0 8px;
+    }
+
+    .carta-aniversario p { margin-bottom: 1.1rem; }
+
+    .carta-aniversario .saludo {
+      font-size: 1.35rem;
+      font-weight: bold;
+      color: var(--rosa-oscuro);
+    }
+
+    .carta-aniversario .destacado {
+      font-size: 1.15rem;
+      font-weight: bold;
+      color: var(--rosa);
+      text-align: center;
+    }
+
+    .carta-aniversario .final {
+      text-align: center;
+      font-weight: bold;
+      color: var(--rosa-oscuro);
+      line-height: 1.8;
+    }
+
+    .carta-scroll {
+      max-height: 70vh;
+      overflow-y: auto;
+      padding-right: .6rem;
+    }
+
+    @media (min-width: 768px) {
+      .carta-aniversario { padding: 3.2rem 3.5rem; }
+    }
+
+    /* ============ AGREGADO: Video ============ */
+    .fondo-video {
+      background: radial-gradient(circle at 50% 0%, #8a2447, #3d0f21 70%);
+      color: white;
+    }
+
+    .fondo-video .titulo-seccion { color: #ffd6e3; }
+    .fondo-video .texto-suave { color: #f3c4d3; }
+
+    .marco-video {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 12px;
+      border-radius: 28px;
+      background: linear-gradient(135deg, #ffb3cb, #b52e59, #ffd6e3);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, .45);
+    }
+
+    .marco-video .ratio {
+      border-radius: 18px;
+      overflow: hidden;
+      background: #000;
+    }
+
+    .marco-video video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      background: #000;
+    }
   </style>
 </head>
 
@@ -269,6 +381,13 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#cancion">Nuestra canción</a>
+          </li>
+          agregado aqui
+            <li class="nav-item">
+            <a class="nav-link" href="#carta-aniversario">4 meses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#video">Nuestro video</a>
           </li>
         </ul>
       </div>
@@ -578,6 +697,172 @@
       <p class="text-center texto-suave mt-4 fst-italic">
         "No quiero solamente recuerdos bonitos contigo; quiero seguir construyéndolos." 💌
       </p>
+    </div>
+  </section>
+<!-- ============ AGREGADO: CARTA DE 4 MESES ============ -->
+  <section class="seccion fondo-aniversario" id="carta-aniversario">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <p class="text-uppercase small fw-semibold" style="letter-spacing: 3px;">
+          4 meses juntos
+        </p>
+        <h2 class="titulo-seccion display-5">Una carta de aniversario 💌</h2>
+        <p class="texto-suave mt-3">Toca el sobre para abrirla.</p>
+      </div>
+
+      <button class="sobre-boton mb-4" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#cartaAniversario"
+              aria-expanded="false"
+              aria-controls="cartaAniversario"
+              aria-label="Abrir la carta de aniversario">
+        <span class="sobre-emoji">💌</span>
+      </button>
+
+      <div class="collapse" id="cartaAniversario">
+        <article class="carta-aniversario mt-5">
+          <div class="carta-scroll">
+
+            <p class="saludo">Mi amor hoy cumplimos 4 meses juntos ❤️🥹💗</p>
+
+            <p>Y aunque para algunas personas cuatro meses puedan parecer poquito tiempo para mí significan muchísimo porque en este tiempo te has convertido en una de las personas más importantes de mi vida 🫶🏻❤️</p>
+
+            <p>No tienes idea de lo feliz que me hace tenerte a mi lado y poder decir que tengo a la niña más hermosa del mundo como mi novia 💗</p>
+
+            <p>A veces me pongo a pensar en lo bonito que es haberte conocido y en todas las cosas que me haces sentir con tan solo un mensaje una llamada o una sonrisa tuya 🥹💘</p>
+
+            <p>Porque tú tienes algo que nadie más tiene algo que hace que mis días sean más bonitos incluso cuando las cosas no van tan bien ❤️‍🩹💗</p>
+
+            <p>Tú eres esa personita con la que quiero compartir mis días mis pensamientos mis alegrías mis tristezas y todos esos pequeños momentos que al final terminan convirtiéndose en recuerdos inolvidables 🫂❤️</p>
+
+            <p>Y si hay algo que quiero que tengas muy claro es que no eres cualquier persona para mí mi amor 🥹💖</p>
+
+            <p>Tú eres alguien demasiado especial alguien que llegó a mi vida y comenzó a ocupar un lugar en mi corazón que no sabía que necesitaba llenar 💗</p>
+
+            <p>Me encanta tu forma de ser tu sonrisa tus ojitos tu carita y cada pequeño detalle que te hace ser tú misma 😭❤️</p>
+
+            <p>Me encanta cuando me cuentas tus cosas cuando me haces reír cuando me dices cosas bonitas y cuando de alguna manera logras hacerme sentir el niño más afortunado del mundo 🥹💘</p>
+
+            <p class="destacado">Pero hay algo que quiero decirte especialmente mi niña 💗</p>
+
+            <p>Desde que vi tus fotos de tus XV años y te vi bailando con tu sobrino me quedé pensando en lo hermosa que te veías 😭❤️</p>
+
+            <p>De verdad mi amor no sabes lo mucho que me gusta verte así de bonita y feliz 🥹💖</p>
+
+            <p>Verte con tu vestido bailando en un día tan especial para ti me hizo pensar en lo hermosa que eres no solamente por fuera sino también por esos momentos tan bonitos que forman parte de tu vida 💗</p>
+
+            <p>Te veías como una princesa mi amor una princesa de esas que parecen sacadas de un cuento y que sin darse cuenta hacen que alguien se quede completamente enamorado de ellas 😭👑❤️</p>
+
+            <p>Y aunque yo no haya estado ahí para verte en persona en ese momento me hace muy feliz poder conocer esos recuerdos tuyos y ver lo bonita que eras en una etapa tan especial de tu vida 🥹💘</p>
+
+            <p>Me hubiera encantado poder estar ahí aunque fuera solamente para verte sonreír y admirarte desde lejos mientras disfrutabas de uno de los días más bonitos de tu vida ❤️</p>
+
+            <p>Porque si algo tengo claro es que me encanta verte feliz y quiero que siempre tengas motivos para sonreír mi niña 🫶🏻💗</p>
+
+            <p>Quiero que sepas que para mí eres muchísimo más que una cara bonita o una novia a la que puedo decirle que amo 🥹❤️</p>
+
+            <p>Eres mi compañera mi niña bonita mi lugar seguro y una persona con la que quiero seguir construyendo recuerdos que algún día podamos mirar juntos y decir que todo lo que vivimos valió la pena 💖</p>
+
+            <p>Quiero estar contigo en tus días buenos pero también en esos días en los que sientas que nada sale bien 🫂❤️‍🩹</p>
+
+            <p>Quiero abrazarte cuando estés triste escucharte cuando necesites desahogarte y recordarte todas las veces que haga falta lo maravillosa que eres 💗</p>
+
+            <p>Quiero que nunca tengas que preguntarte si eres importante para mí porque espero demostrártelo con mis acciones con mis palabras y con cada pequeño detalle que tenga contigo 🥹💘</p>
+
+            <p>No te prometo que todos los días serán perfectos porque sé que la vida no funciona así pero sí quiero poner de mi parte para que nunca te falte amor comprensión respeto y ganas de seguir adelante juntos ❤️</p>
+
+            <p>Quiero aprender de ti quiero conocerte cada día un poquito más y quiero descubrir todas esas pequeñas cosas que te hacen sonreír y que quizá nadie más nota 💗</p>
+
+            <p>Quiero seguir conociendo tus gustos tus sueños tus miedos tus metas y todo eso que llevas dentro de tu corazón 🥹🫶🏻</p>
+
+            <p>Porque amarte también significa querer conocer cada parte de ti y acompañarte mientras vas cumpliendo todo aquello que deseas para tu vida ❤️</p>
+
+            <p>Y si algún día llegas a sentir que no eres suficiente quiero que recuerdes que para mí eres una niña increíble y que mereces recibir todo ese amor bonito que tantas veces has dado 💖</p>
+
+            <p>Nunca olvides lo valiosa que eres mi princesa nunca dejes de sonreír y nunca pienses que tienes que cambiar tu esencia para merecer que alguien te ame 🥹💗</p>
+
+            <p>Yo quiero a esa niña que eres tú con tus ocurrencias tus enojos tus risas tus días sensibles tus momentos felices y todas esas pequeñas cosas que te hacen tan especial para mí ❤️</p>
+
+            <p>Y si pudiera regresar el tiempo hasta el día en que comenzamos nuestra historia volvería a elegirte sin pensarlo porque estos cuatro meses contigo me han demostrado lo bonito que puede ser compartir la vida con alguien que significa tanto para ti 💘</p>
+
+            <p>Gracias por estos cuatro meses mi amor gracias por permitirme ser parte de tu vida y por regalarme tantos motivos para sonreír 🥹❤️</p>
+
+            <p>Gracias por cada mensaje por cada palabra bonita por cada momento compartido y por cada recuerdo que poco a poco vamos construyendo juntos 💗</p>
+
+            <p>Quizá no siempre encuentre las palabras exactas para explicarte todo lo que siento pero quiero que sepas que cuando te digo que te amo lo digo con todo mi corazón ❤️‍🩹</p>
+
+            <p>Te amo más de lo que muchas veces sé explicar y me hace feliz poder seguir descubriendo nuevas razones para enamorarme de ti cada día 🥹💖</p>
+
+            <p>Hoy cumplimos cuatro meses y mi mayor deseo es que esta sea solamente una pequeña parte de una historia mucho más larga y bonita juntos 🫶🏻💗</p>
+
+            <p>Quiero que algún día podamos recordar este momento y sonreír al pensar en todo lo que hemos vivido desde aquel comienzo hasta todas las cosas bonitas que todavía nos esperan ❤️</p>
+
+            <p>Quiero más meses contigo más aniversarios más fotografías más abrazos más besos más risas más locuras y muchísimos recuerdos que algún día podamos guardar con todo nuestro cariño 💘</p>
+
+            <p>Y sobre todo quiero seguir teniendo la oportunidad de decirte que eres la niña que amo y que no cambiaría lo que tenemos por nada del mundo 🥹❤️</p>
+
+            <p>Mi niña hermosa nunca dudes de lo importante que eres para mí porque llegaste a mi vida para convertirte en alguien que llevo conmigo incluso cuando no estamos juntos 💗</p>
+
+            <p>Estás en mis pensamientos cuando escucho una canción bonita cuando veo algo que me recuerda a ti y cuando imagino todas esas cosas que me gustaría vivir contigo 🫂💖</p>
+
+            <p>Y si hoy pudiera pedir un deseo pediría que la vida nos permita seguir creciendo juntos que nunca nos falten las ganas de comprendernos y que siempre encontremos una razón para volver a elegirnos ❤️</p>
+
+            <p>Porque entre tantas personas en este mundo qué bonito es haber coincidido contigo y poder llamarte mi amor mi niña bonita y mi princesa 🥹👑💗</p>
+
+            <p class="destacado">Felices cuatro meses mi vida ❤️😭</p>
+
+            <p>Te amo muchísimo más de lo que estas palabras pueden explicar y espero que este pequeño video te recuerde lo hermosa lo especial y lo importante que eres para mí 💖</p>
+
+            <p>Ojalá cuando lo estés viendo sonrías aunque sea un poquito y puedas sentir todo el amor con el que hice cada parte pensando en ti 🥹💘</p>
+
+            <p>Porque detrás de cada imagen de cada recuerdo y de cada palabra estás tú mi niña hermosa la persona que hace que mi corazón se sienta tan feliz de amar 💗</p>
+
+            <p>Y si pudiera volver a enamorarme de ti desde el principio lo haría una y mil veces más porque mi corazón volvería a encontrarte incluso entre millones de personas ❤️‍🩹💖</p>
+
+            <p class="final">
+              TE AMO MI PRINCESA HERMOSA ❤️👑<br>
+              FELICES 4 MESES MI AMORCITO 🥹💗<br>
+              Y QUE SEAN MUCHÍSIMOS MÁS A TU LADO MI NIÑA BONITA 💘🫶🏻<br>
+              SIEMPRE TÚ MI AMOR ❤️♾️
+            </p>
+
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============ AGREGADO: VIDEO ============ -->
+  <section class="seccion fondo-video text-center" id="video">
+    <div class="container">
+
+      <p class="text-uppercase small fw-semibold" style="letter-spacing: 3px;">
+        Hecho con todo mi corazón
+      </p>
+      <h2 class="titulo-seccion display-5">Un video para ti 🎬</h2>
+      <p class="texto-suave mt-3 mb-5">
+        Dale play y deja que cada recuerdo te cuente cuánto te amo. 💗
+      </p>
+
+      <div class="marco-video">
+        <div class="ratio ratio-16x9">
+          <video id="videoAmor"
+                 src="video1.mp4"
+                 controls
+                 playsinline
+                 preload="metadata">
+            Tu navegador no admite la reproducción de video.
+          </video>
+        </div>
+      </div>
+
+      <p class="texto-suave fst-italic mt-4 mb-0">
+        "Felices 4 meses, mi amor." ❤️
+      </p>
+
     </div>
   </section>
 
